@@ -22,6 +22,7 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textField.delegate = self
+        textField.clearButtonMode = .whileEditing
         NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnd), name:
         NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
     }
@@ -33,6 +34,7 @@ class ListViewController: UIViewController {
 }
 
 extension ListViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return musicListVM == nil ? 0 : self.musicListVM.numberOfRowsInSection(section)
     }
@@ -85,6 +87,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension ListViewController: UITextFieldDelegate {
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         let requestString = textField.text
         guard let url = URL(string:"https://itunes.apple.com/search?term=\(requestString ?? "")&limit=25") else { return }

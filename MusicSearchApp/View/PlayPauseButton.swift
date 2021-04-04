@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class PlayPauseButton: UIButton {
+    
     var previewUrl: URL?
     var isPlaying: Bool = false
 }
