@@ -13,7 +13,6 @@
 		F8D5D4512619ACBA00513177 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D44F2619ACBA00513177 /* play.png */; };
 		F8D5D4592619E89000513177 /* PlayPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D4582619E89000513177 /* PlayPauseButton.swift */; };
 		F8ED315A2619811C0065C76C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED31592619811C0065C76C /* AppDelegate.swift */; };
-		F8ED315C2619811C0065C76C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED315B2619811C0065C76C /* SceneDelegate.swift */; };
 		F8ED315E2619811C0065C76C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED315D2619811C0065C76C /* ListViewController.swift */; };
 		F8ED31612619811C0065C76C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8ED315F2619811C0065C76C /* Main.storyboard */; };
 		F8ED3163261981280065C76C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8ED3162261981280065C76C /* Assets.xcassets */; };
@@ -30,7 +29,6 @@
 		F8D5D4582619E89000513177 /* PlayPauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPauseButton.swift; sourceTree = "<group>"; };
 		F8ED31562619811C0065C76C /* MusicSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8ED31592619811C0065C76C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F8ED315B2619811C0065C76C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F8ED315D2619811C0065C76C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		F8ED31602619811C0065C76C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8ED3162261981280065C76C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 				F8ED316F261981DE0065C76C /* ViewController */,
 				F8ED316D261981C80065C76C /* View */,
 				F8ED31592619811C0065C76C /* AppDelegate.swift */,
-				F8ED315B2619811C0065C76C /* SceneDelegate.swift */,
 				F8ED3162261981280065C76C /* Assets.xcassets */,
 				F8ED3164261981280065C76C /* LaunchScreen.storyboard */,
 				F8ED3167261981280065C76C /* Info.plist */,
@@ -216,7 +213,6 @@
 				F8ED315E2619811C0065C76C /* ListViewController.swift in Sources */,
 				F8ED315A2619811C0065C76C /* AppDelegate.swift in Sources */,
 				F8ED3173261985370065C76C /* WebService.swift in Sources */,
-				F8ED315C2619811C0065C76C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +359,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MusicSearchApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,7 +379,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MusicSearchApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
