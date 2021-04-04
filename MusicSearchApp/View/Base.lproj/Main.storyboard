@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicSearchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dp9-UF-G15">
+                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Singer, Song's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AXR-DA-yZ4">
+                                        <rect key="frame" x="8" y="13" width="398" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96848052740097046" green="0.87243117629590761" blue="0.68289114572008636" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="AXR-DA-yZ4" firstAttribute="centerY" secondItem="dp9-UF-G15" secondAttribute="centerY" id="aRx-Qe-tbn"/>
+                                    <constraint firstItem="AXR-DA-yZ4" firstAttribute="leading" secondItem="dp9-UF-G15" secondAttribute="leading" constant="8" id="d3W-1I-cXi"/>
+                                    <constraint firstAttribute="trailing" secondItem="AXR-DA-yZ4" secondAttribute="trailing" constant="8" id="jus-yn-zSK"/>
+                                    <constraint firstAttribute="height" constant="60" id="mUk-wD-9uH"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aYX-qn-Pxt">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dp9-UF-G15" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Oy-KW-KsX"/>
+                            <constraint firstItem="dp9-UF-G15" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7oa-op-657"/>
+                            <constraint firstItem="dp9-UF-G15" firstAttribute="leading" secondItem="aYX-qn-Pxt" secondAttribute="leading" id="8xS-Jk-UhX"/>
+                            <constraint firstItem="aYX-qn-Pxt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Abb-Z8-zcz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aYX-qn-Pxt" secondAttribute="bottom" id="DOf-BK-ci0"/>
+                            <constraint firstItem="dp9-UF-G15" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EUL-3w-bEm"/>
+                            <constraint firstItem="dp9-UF-G15" firstAttribute="trailing" secondItem="aYX-qn-Pxt" secondAttribute="trailing" id="eAX-RA-rDG"/>
+                            <constraint firstItem="aYX-qn-Pxt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nZb-Ur-QTw"/>
+                            <constraint firstItem="aYX-qn-Pxt" firstAttribute="top" secondItem="dp9-UF-G15" secondAttribute="bottom" id="rz1-iR-7SN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
