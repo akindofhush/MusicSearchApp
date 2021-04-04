@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8D5D44A2619A2ED00513177 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D4492619A2ED00513177 /* MusicTableViewCell.swift */; };
+		F8D5D44C2619A56600513177 /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D44B2619A56600513177 /* MusicViewModel.swift */; };
+		F8D5D4502619ACBA00513177 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D44E2619ACBA00513177 /* pause.png */; };
+		F8D5D4512619ACBA00513177 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = F8D5D44F2619ACBA00513177 /* play.png */; };
+		F8D5D4592619E89000513177 /* PlayPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5D4582619E89000513177 /* PlayPauseButton.swift */; };
 		F8ED315A2619811C0065C76C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED31592619811C0065C76C /* AppDelegate.swift */; };
 		F8ED315C2619811C0065C76C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED315B2619811C0065C76C /* SceneDelegate.swift */; };
-		F8ED315E2619811C0065C76C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED315D2619811C0065C76C /* ViewController.swift */; };
+		F8ED315E2619811C0065C76C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ED315D2619811C0065C76C /* ListViewController.swift */; };
 		F8ED31612619811C0065C76C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8ED315F2619811C0065C76C /* Main.storyboard */; };
 		F8ED3163261981280065C76C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8ED3162261981280065C76C /* Assets.xcassets */; };
 		F8ED3166261981280065C76C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8ED3164261981280065C76C /* LaunchScreen.storyboard */; };
@@ -18,10 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8D5D4492619A2ED00513177 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		F8D5D44B2619A56600513177 /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
+		F8D5D44E2619ACBA00513177 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		F8D5D44F2619ACBA00513177 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		F8D5D4582619E89000513177 /* PlayPauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPauseButton.swift; sourceTree = "<group>"; };
 		F8ED31562619811C0065C76C /* MusicSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8ED31592619811C0065C76C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8ED315B2619811C0065C76C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F8ED315D2619811C0065C76C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8ED315D2619811C0065C76C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		F8ED31602619811C0065C76C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8ED3162261981280065C76C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8ED3165261981280065C76C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F8D5D44D2619AC9600513177 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8D5D44E2619ACBA00513177 /* pause.png */,
+				F8D5D44F2619ACBA00513177 /* play.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F8ED314D2619811C0065C76C = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +79,7 @@
 		F8ED31582619811C0065C76C /* MusicSearchApp */ = {
 			isa = PBXGroup;
 			children = (
+				F8D5D44D2619AC9600513177 /* Resources */,
 				F8ED3174261985CE0065C76C /* Models */,
 				F8ED3171261981F50065C76C /* Service */,
 				F8ED3170261981E90065C76C /* ViewModel */,
@@ -78,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				F8ED315F2619811C0065C76C /* Main.storyboard */,
+				F8D5D4492619A2ED00513177 /* MusicTableViewCell.swift */,
+				F8D5D4582619E89000513177 /* PlayPauseButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -85,7 +107,7 @@
 		F8ED316F261981DE0065C76C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F8ED315D2619811C0065C76C /* ViewController.swift */,
+				F8ED315D2619811C0065C76C /* ListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -93,6 +115,7 @@
 		F8ED3170261981E90065C76C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F8D5D44B2619A56600513177 /* MusicViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -172,7 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8ED3166261981280065C76C /* LaunchScreen.storyboard in Resources */,
+				F8D5D4512619ACBA00513177 /* play.png in Resources */,
 				F8ED3163261981280065C76C /* Assets.xcassets in Resources */,
+				F8D5D4502619ACBA00513177 /* pause.png in Resources */,
 				F8ED31612619811C0065C76C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,8 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D5D4592619E89000513177 /* PlayPauseButton.swift in Sources */,
 				F8ED3176261985F00065C76C /* MusicData.swift in Sources */,
-				F8ED315E2619811C0065C76C /* ViewController.swift in Sources */,
+				F8D5D44A2619A2ED00513177 /* MusicTableViewCell.swift in Sources */,
+				F8D5D44C2619A56600513177 /* MusicViewModel.swift in Sources */,
+				F8ED315E2619811C0065C76C /* ListViewController.swift in Sources */,
 				F8ED315A2619811C0065C76C /* AppDelegate.swift in Sources */,
 				F8ED3173261985370065C76C /* WebService.swift in Sources */,
 				F8ED315C2619811C0065C76C /* SceneDelegate.swift in Sources */,

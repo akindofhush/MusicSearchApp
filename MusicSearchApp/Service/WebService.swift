@@ -23,9 +23,6 @@ class Webservice {
                 if let musicList = musicList {
                     completion(musicList.results)
                 }
-                
-                print(musicList?.results)
-                
             }
             
         }.resume()
